@@ -18,6 +18,7 @@ const urlForOwnip = 'https://api.db-ip.com/v2/free/self';
 const ip_address = document.querySelector('.ip_address');
 const btSearch = document.querySelector('.search_button');
 
+
 //validar que la ip introducida 
 function validar(){
     var valueForm = object.value.split("\n"); 
@@ -30,6 +31,7 @@ function validateIp(ip_address) {
     var patronIp = new RegExp(
       "/^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/"
     );
+    
     var valores;
   
       if (ip_address.search(patronIp) !== 0) {
